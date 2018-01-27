@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lists, Tables and Forms</title>
+            <style type="text/css">
+                * {
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                table {
+                    width: 1100px;
+                    border-spacing: 0px;
+                }
+                th {
+                    padding: 10px;
+                }
+                td {
+                    color: #292929;
+                    text-shadow: 1px 1px 1px #ffffff;
+                    padding: 20px;
+                    border-bottom: 1px solid #8b8c8d;
+                    border-right: 1px solid #8b8c8d;
+                }
+                tr.company th:first-child {
+                    -webkit-border-top-left-radius: 10px;
+                    border-top-left-radius: 10px;
+                    -moz-border-radius-topleft: 10px;
+                }
+                tr.company th:last-child {
+                    -webkit-border-top-right-radius: 10px;
+                    border-top-right-radius: 10px;
+                    -moz-border-radius-topright: 10px;
+                }
+                tr.best td:last-child {
+                    -webkit-border-bottom-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    -moz-border-radius-bottomright: 10px;
+                }
+                tr.best th:first-child {
+                    -webkit-border-bottom-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    -moz-border-radius-bottomleft: 10px;
+                }
+                .company {
+                    background-color: #0099ff;
+                    color: #ffffff;
+                    text-shadow: -1px -1px 2px #292929;
+                    text-align: center;
+                }
+                tr.company th {
+                    border-right: 1px solid #8b8c8d;
+                    border-bottom: 2px solid #000000;
+                }
+                tr.full th {
+                    border-right: 1px solid #8b8c8d;
+                    border-bottom: 1px solid #8b8c8d;
+                }
+                tr.mid th {
+                    border-right: 1px solid #8b8c8d;
+                    border-bottom: 1px solid #8b8c8d;
+                }
+                tr.budget th {
+                    border-right: 1px solid #8b8c8d;
+                    border-bottom: 1px solid #8b8c8d;
+                }
+                tr.best th {
+                    border-right: 1px solid #8b8c8d;
+                    border-bottom: 1px solid #8b8c8d;
+                }
+                .full, .budget {
+                    background-color: #a4dbff;
+                    text-align: left;
+                    color: #363636;
+                }
+                .mid, .best {
+                    background-color: #c7e9ff;
+                    text-align: left;
+                    color: #363636;
+                }
+                fieldset {
+                    width: 400px;
+                    border-radius: 10px;
+                    padding: 10px;
+                    margin-top: 10px;
+                }
+                legend {
+                    font-style: italic;
+                }
+                label {
+                    text-align: left;    
+                }
+                input#name, #email {
+                    margin-left: 140px;
+        
+                }
+                select {
+                    margin-left: 55px;
+                
+                }
+                input#yes {
+                    margin-left: 50px;
+                }
+                input#no {
+                    margin-left: 10px;
+                }
+                #submit {
+                    background-color: #008855;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+                .submit {
+                    width: 400px;
+                    margin-left: 360px; 
+                }
+               
+            </style>
+    </head>
+    <header><h1>Top Rated Computer Case Manufacturers</h1></header>
+    <p>We will take a look at the top computer case manufacturers and some of their most innovative cases.</p>
+    <p>We will focus on the following categories:</p>
+    <body>
+        <table>
+            <tr class="company">
+                <th></th>
+                <th>Corsair</th>
+                <th>Cooler Master</th>
+                <th>Phanteks</th>
+                <th>NZXT</th>
+            </tr>
+            <tr class="full">
+                <th>Best Full Tower Case</th>
+                <td>Graphite Series</td>
+                <td>HAF X</td>
+                <td>Enthoo Luxe</td>
+                <td>Phantom</td>
+            </tr>
+            <tr class="mid">
+                <th>Best Mid Tower Case</th>
+                <td>570X/460X</td>
+                <td>MasterCase H500P</td>
+                <td>Enthoo Evolv</td>
+                <td>S340</td>
+            </tr>
+            <tr class="budget">
+                <th>Best Budget Case</th>
+                <td>Carbide</td>
+                <td>MasterBox Lite</td>
+                <td>Eclipse</td>
+                <td>Source</td>
+            </tr>
+            <tr class="best">
+                <th>Best Overall</th>
+                <td>570X/460X</td>
+                <td>MasterCase H500P</td>
+                <td>Enthoo Evolv</td>
+                <td>S340</td>
+            </tr>
+        </table>
+        <form>
+                <fieldset>
+                    <legend>Subscribe for Newsletter</legend>
+                    <p> <label for="name">Your name: </label><input type="text" id="name" /></p>
+                    <p> <label for="email">Your email: </label><input type="text" id="email" /></p>
+                        <label for="case" class="title">Your favorite case size: </label>
+                    <select name="location" id="location">
+                        <option value="ft">Full Tower</option>
+                        <option value="mt">Mid Tower</option>
+                        <option value="sf">Small Form Factor</option>
+                    </select>
+                    <p>
+                    <span class="title">Looking for a new case?</span>
+                    <label><input type="radio" name="case" value="yes" id="yes"/> Yes</label>
+                    <label><input type="radio" name="case" value="no" id="no"/> No</label>
+                    </p>
+                </fieldset>
+                <div class="submit"><input type="submit" value="Subscribe" id="submit" /></div>
+                
+        </form>
+    </body>
+</html>
